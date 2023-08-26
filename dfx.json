@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "icp_rust_03_backend": {
+      "candid": "src/icp_rust_03_backend/icp_rust_03_backend.did",
+      "package": "icp_rust_03_backend",
+      "type": "rust"
+    },
+    "icp_rust_03_frontend": {
+      "dependencies": [
+        "icp_rust_03_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/icp_rust_03_frontend/src/index.html"
+      },
+      "source": [
+        "src/icp_rust_03_frontend/assets",
+        "dist/icp_rust_03_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
