@@ -1,3 +1,5 @@
 service : {
-    "greet": (text) -> (text) query;
+    "get_participation": (nat64) -> (opt nat64) query;
+    "get_item_num": () -> (nat64) query;
+    "insert_participation": (nat64, nat64) -> (opt nat64);
 }

@@ -1,4 +1,4 @@
-# icp_rust_03
+# icp_rust_03 - Example Project
 
 Welcome to your new icp_rust_03 project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
 
@@ -13,6 +13,16 @@ To learn more before you start working with icp_rust_03, see the following docum
 - [ic-cdk-macros](https://docs.rs/ic-cdk-macros)
 - [Candid Introduction](https://internetcomputer.org/docs/candid-guide/candid-intro)
 - [JavaScript API Reference](https://erxue-5aaaa-aaaab-qaagq-cai.raw.icp0.io)
+
+## Notes for Error (Tested Apple Silicon Chip)
+
+If you get error about typenum, derive and macros etc. you can try below code to fix:
+
+```bash
+rustup target add wasm32-unknown-unknown
+```
+
+##
 
 If you want to start working on your project right away, you might want to try the following commands:
 
